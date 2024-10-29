@@ -26,7 +26,7 @@ def invoke_llm():
 def lambda_handler(event, context):
     print("Event ", event)
     print("Context ", context)
-    telegram_message = json.loads(event["body"])["message"]
+    telegram_message = json.loads(event)["message"]
 
     query = telegram_message["text"]
     user_id = telegram_message["from"]["id"]

@@ -1,23 +1,21 @@
 {
-    "body": {
-        "update_id": 949523039,
-        "message": {
-            "message_id": 13,
-            "from": {
-                "id": 890063940,
-                "is_bot": false,
-                "first_name": "notice",
-                "username": "gkesavage",
-                "language_code": "en"
-            },
-            "chat": {
-                "id": 890063940,
-                "first_name": "notice",
-                "username": "gkesavage",
-                "type": "private"
-            },
-            "date": 1730224440,
-            "text": "Test"
-        }
+    "update_id": 949523039,
+    "message": {
+        "message_id": 13,
+        "from": {
+            "id": 890063940,
+            "is_bot": false,
+            "first_name": "notice",
+            "username": "gkesavage",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": 890063940,
+            "first_name": "notice",
+            "username": "gkesavage",
+            "type": "private"
+        },
+        "date": 1730224440,
+        "text": "Test"
     }
 }
