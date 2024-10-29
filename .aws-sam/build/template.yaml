@@ -6,7 +6,7 @@ Resources:
     Properties:
       FunctionName: genAiResponse
       Handler: app.lambda_handler
-      Runtime: python3.12
+      Runtime: python3.11
       CodeUri: GenAiResponseFunction
       MemorySize: 128
       Timeout: 300

@@ -16,7 +16,7 @@ def invoke_llm():
                 "messages": [
                     {"role": "user", "content": "What is the meaning of life?"}
                 ],
-                "max_tokens": 10,  # Limit response length to 300 tokens
+                "max_tokens": 30,  # Limit response length to 30 tokens
             }
         ),
     )
@@ -24,5 +24,14 @@ def invoke_llm():
 
 
 def lambda_handler(event, context):
+    print("Event ", event)
+    print("Context ", context)
+    telegram_message = json.loads(event["body"])["message"]
+
+    query = telegram_message["text"]
+    user_id = telegram_message["from"]["id"]
+
+    print("Query ", query)
+    print("User id ", user_id)
     llm_response = invoke_llm()
     return {"statusCode": 200, "body": llm_response["choices"][0]["message"]["content"]}
