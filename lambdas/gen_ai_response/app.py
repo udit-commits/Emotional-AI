@@ -24,5 +24,7 @@ def invoke_llm():
 
 
 def lambda_handler(event, context):
+    print("Event ", event)
+    print("Context ", context)
     llm_response = invoke_llm()
     return {"statusCode": 200, "body": llm_response["choices"][0]["message"]["content"]}
