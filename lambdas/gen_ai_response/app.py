@@ -55,8 +55,11 @@ def lambda_handler(event, context):
 
     user_chat = get_user_chat(user_id)
     chat_history = user_chat["chat_history"] if user_chat else []
-    llm_response = invoke_llm(query, chat_history)
-    ll_response_text = llm_response["choices"][0]["message"]["content"]
+    if query.lower() == "/start":
+        ll_response_text = "Hey, I am Vanshika. Good to meet you"
+    else:
+        llm_response = invoke_llm(query, chat_history)
+        ll_response_text = llm_response["choices"][0]["message"]["content"]
     time.sleep(random.uniform(4, 7))
     add_chat_message(user_id, query, "user")
     add_chat_message(user_id, ll_response_text, "assistant")
