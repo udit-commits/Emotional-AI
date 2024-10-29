@@ -19,3 +19,6 @@ Resources:
         - x86_64
       SnapStart:
         ApplyOn: None
+      Environment:
+        Variables:
+          TELEGRAM_BOT_TOKEN: "8161677659:AAGF0Ipv9k5SChPu2txKAaL2Efd_RAogw8E"
