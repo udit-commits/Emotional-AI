@@ -1,0 +1,42 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+venv/
+cli/
+# env/
+
+# Ignore cache directories
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore compiled code
+# *.egg-info/
+# dist/
+# build/
+
+# Ignore layer zip files
+*.zip
+
+# Ignore AWS SAM build artifacts
+.aws-sam/
+
+
+
+# Add your own custom ignores below
