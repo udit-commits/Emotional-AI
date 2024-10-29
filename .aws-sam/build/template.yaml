@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  GenAiResponseFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: genAiResponse
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      CodeUri: GenAiResponseFunction
+      MemorySize: 128
+      EphemeralStorage:
+        Size: 512
+      Tracing: PassThrough
+      PackageType: Zip
+      Architectures:
+      - x86_64
+      SnapStart:
+        ApplyOn: None
+    Metadata:
+      SamResourceId: GenAiResponseFunction

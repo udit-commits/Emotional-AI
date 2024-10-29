@@ -1,0 +1,42 @@
+name: CI/CD for Lambda Functions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Build Lambda function
+        run: |
+          cd lambdas/gen_ai_response
+          pip install -r requirements.txt -t .
+          zip -r ../../gen_ai_response.zip .
+
+      - name: Upload to S3
+        run: |
+          aws s3 cp gen_ai_response.zip s3://emotional-ai-code/lambdas/gen_ai_response.zip
+
+      - name: Deploy Lambda Function
+        run: |
+          aws lambda update-function-code \
+            --function-name genAiResponse \
+            --s3-bucket emotional-ai-code \
+            --s3-key lambdas/gen_ai_response.zip
