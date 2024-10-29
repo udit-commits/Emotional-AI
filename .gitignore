@@ -38,5 +38,5 @@ Thumbs.db
 .aws-sam/
 
 
-
+template.yaml
 # Add your own custom ignores below
