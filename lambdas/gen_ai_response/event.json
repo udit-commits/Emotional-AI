@@ -1,0 +1,10 @@
+{
+    "requestContext": {
+        "connectionId": "dayaftershazamconnection",
+        "routeKey": "receiveMessage",
+        "eventType": "CONNECT"
+    },
+    "body": {
+        "message": "Hello"
+    }
+}
