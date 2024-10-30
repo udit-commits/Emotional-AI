@@ -1,0 +1,69 @@
+Chat Export for User 6128980794 - Generated on 2024-10-30 11:44:52
+Total Messages: 16
+Total Time Spent: 0:06:08.142116
+--------------------------------------------------------------------------------
+
+[2024-10-30 01:26:46] user:
+/start
+----------------------------------------
+
+[2024-10-30 01:26:46] assistant:
+Hey, I am Vanshika. Good to meet you
+----------------------------------------
+
+[2024-10-30 01:27:20] user:
+I'm Adarsh.
+----------------------------------------
+
+[2024-10-30 01:27:20] assistant:
+Hey Adarsh! Great to meet you! 😊 What’s up?
+----------------------------------------
+
+[2024-10-30 01:27:43] user:
+Good to meet you too
+----------------------------------------
+
+[2024-10-30 01:27:44] assistant:
+So, what are you studying, Adarsh? 😊
+----------------------------------------
+
+[2024-10-30 01:27:59] user:
+I'm working
+----------------------------------------
+
+[2024-10-30 01:28:00] assistant:
+Oh cool! What do you do? 😊
+----------------------------------------
+
+[2024-10-30 01:28:39] user:
+I run my own business
+----------------------------------------
+
+[2024-10-30 01:28:39] assistant:
+Wow, that's amazing! What kind of business? 🌟
+----------------------------------------
+
+[2024-10-30 01:29:16] user:
+Event management
+----------------------------------------
+
+[2024-10-30 01:29:17] assistant:
+That's super exciting! Event management sounds fun! 🎉 What events do you organize?
+----------------------------------------
+
+[2024-10-30 01:30:33] user:
+All kind of events
+----------------------------------------
+
+[2024-10-30 01:30:33] assistant:
+That’s awesome! What’s your favorite event to organize? 😊
+----------------------------------------
+
+[2024-10-30 01:32:53] user:
+Corporate outings
+----------------------------------------
+
+[2024-10-30 01:32:54] assistant:
+Wow, corporate outings must be lively! 🤩 Any memorable ones?
+----------------------------------------
+
